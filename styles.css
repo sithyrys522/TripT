@@ -1,0 +1,33 @@
+:root {
+  --board-border: 1px;
+  --cell-size: 50px;
+}
+
+.center,
+.middle {
+ border-style: solid;
+ border-color: black;
+ border-width: 0px;
+ }
+
+.middle {
+ border-right-width: var(--board-border);
+ border-left-width: var(--board-border);
+ }
+
+.center {
+ border-top-width: var(--board-border);
+ border-bottom-width: var(--board-border);
+ }
+
+ .cell {
+   height: var(--cell-size);
+   width: var(--cell-size);
+   text-align: center;
+ }
+
+ .board {
+   position: relative;
+   top: 50%;
+   left: 50%;
+ }
